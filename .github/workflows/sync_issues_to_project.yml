@@ -12,10 +12,10 @@ jobs:
           project-url: "https://github.com/users/pandamime100hp/projects/5"
           labeled-column: |
             {
-              "bug": "To Do",
-              "feature": "To Do",
-              "devops": "To Do",
-              "security": "To Do",
-              "testing": "To Do",
-              "documentation": "To Do"
+              "bug": "Backlog",
+              "feature": "Backlog",
+              "devops": "Backlog",
+              "security": "Backlog",
+              "testing": "Backlog",
+              "documentation": "Backlog"
             }
