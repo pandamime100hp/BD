@@ -11,7 +11,7 @@ jobs:
     environment:
       name: devops
     steps:
-      - uses: actions/add-to-project@v1
+      - uses: actions/add-to-project@v1.0.2
         with:
           project-url: "https://github.com/users/pandamime100hp/projects/5"
           github-token: ${{ secrets.GITHUB_TOKEN }}
