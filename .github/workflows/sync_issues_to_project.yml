@@ -1,0 +1,21 @@
+name: Project Board Sync
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  sync_to_project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: "https://github.com/users/pandamime100hp/projects/5"
+          labeled-column: |
+            {
+              "bug": "To Do",
+              "feature": "To Do",
+              "devops": "To Do",
+              "security": "To Do",
+              "testing": "To Do",
+              "documentation": "To Do"
+            }
