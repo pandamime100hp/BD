@@ -1,0 +1,30 @@
+# .github/ISSUE_TEMPLATE/testing_task.yml
+name: 🧪 Testing
+description: Testing requirements
+title: "🧪 [Testing]: "
+labels: [testing]
+assignees: [pandamime100hp]
+body:
+  - type: dropdown
+    attributes:
+      label: Test Scope
+      options:
+        - "🔴 Critical Paths (Payment/Booking)"
+        - "🟠 High Risk Areas (Auth/APIs)"
+        - "🟡 General Features"
+        - "🟢 Edge Cases"
+  - type: checkboxes
+    attributes:
+      label: Test Types
+      options:
+        - label: Unit
+        - label: Integration
+        - label: E2E
+        - label: Load
+        - label: Security
+  - type: textarea
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        Coverage target: 
+        Performance threshold: 

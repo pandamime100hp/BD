@@ -1,0 +1,27 @@
+# .github/ISSUE_TEMPLATE/security_issue.yml
+name: 🔒 Security Issue
+description: Report security vulnerabilities
+title: "🔒 [Security]: "
+labels: [security]
+assignees: [pandamime100hp]
+body:
+  - type: dropdown
+    attributes:
+      label: Severity
+      options:
+        - "🔴 Critical (Active exploitation)"
+        - "🟠 High (Vulnerability with PoC)"
+        - "🟡 Medium (Theoretical risk)"
+        - "🟢 Low (Hardening opportunity)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction Steps
+      placeholder: |
+        1. 
+        2. 
+        3.
+  - type: textarea
+    attributes:
+      label: Suggested Mitigation

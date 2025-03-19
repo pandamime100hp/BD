@@ -1,0 +1,49 @@
+# .github/ISSUE_TEMPLATE/bug_report.yml
+name: 🐛 Bug Report
+description: Report unexpected behavior or errors
+title: "🐛 [Bug]: "
+labels: [bug]
+assignees: [pandamime100hp]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the Bug
+      description: Clear description of unexpected behavior
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Affected Services
+      options:
+        - label: API Gateway
+        - label: Train Service
+        - label: Booking Service
+        - label: Frontend (Vue)
+        - label: RabbitMQ
+        - label: Other (specify below)
+  - type: dropdown
+    attributes:
+      label: Severity
+      description: Impact assessment
+      options:
+        - "🔴 Critical (Service outage/data loss)"
+        - "🟠 High (Major functionality broken)"
+        - "🟡 Medium (Minor issue with workaround)"
+        - "🟢 Low (Cosmetic/typo)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction Steps
+      placeholder: |
+        1. 
+        2. 
+        3.
+  - type: textarea
+    attributes:
+      label: Technical Context
+      placeholder: |
+        Django Version: 
+        Vue Version: 
+        Kubernetes Pod: 
+        Log Excerpt:

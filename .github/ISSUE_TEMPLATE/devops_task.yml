@@ -1,0 +1,26 @@
+# .github/ISSUE_TEMPLATE/devops_task.yml
+name: 🚀 DevOps Task
+description: Infrastructure/Deployment changes
+title: "🚀 [DevOps]: "
+labels: [devops]
+assignees: [pandamime100hp]
+body:
+  - type: checkboxes
+    attributes:
+      label: Task Type
+      options:
+        - label: CI/CD Pipeline
+        - label: Kubernetes Configuration
+        - label: Docker Optimization
+        - label: Monitoring
+        - label: Security Patch
+  - type: textarea
+    attributes:
+      label: Implementation Details
+      placeholder: |
+        Helm changes:
+        GitHub Actions workflow:
+        Downtime required: Yes/No
+  - type: textarea
+    attributes:
+      label: Rollback Plan

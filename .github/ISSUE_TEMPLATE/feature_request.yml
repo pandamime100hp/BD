@@ -1,0 +1,30 @@
+# .github/ISSUE_TEMPLATE/feature_request.yml
+name: ✨ Feature Request
+description: Request new functionality
+title: "✨ [Feature]: "
+labels: [feature]
+assignees: [pandamime100hp]
+body:
+  - type: textarea
+    attributes:
+      label: Business Value
+      description: Why this matters to users/admins
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Technical Requirements
+      placeholder: |
+        - API endpoints needed: 
+        - Database changes: 
+        - Event bus messages: 
+        - Frontend components:
+  - type: dropdown
+    attributes:
+      label: Priority
+      options:
+        - "🔴 Critical (Release blocker)"
+        - "🟠 High (Next sprint)"
+        - "🟡 Medium (Backlog)"
+    validations:
+      required: true
