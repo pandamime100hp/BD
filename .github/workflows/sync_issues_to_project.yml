@@ -1,21 +1,19 @@
 name: Project Board Sync
 on:
   issues:
-    types: [opened]
+    types: 
+      - opened
 
 jobs:
   sync_to_project:
+    name: Sync issue to project
     runs-on: ubuntu-latest
+    environment:
+      name: devops
     steps:
-      - uses: actions/add-to-project@v0.4.0
+      - uses: actions/add-to-project@v1
         with:
           project-url: "https://github.com/users/pandamime100hp/projects/5"
-          labeled-column: |
-            {
-              "bug": "Backlog",
-              "feature": "Backlog",
-              "devops": "Backlog",
-              "security": "Backlog",
-              "testing": "Backlog",
-              "documentation": "Backlog"
-            }
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          labeled: bug, feature, devops, security, testing, documentation
+          label-operator: OR
