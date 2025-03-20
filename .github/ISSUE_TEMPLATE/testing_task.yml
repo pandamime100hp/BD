@@ -4,6 +4,7 @@ description: Testing requirements
 title: "🧪 [Testing]: "
 labels: [testing]
 assignees: [pandamime100hp]
+projects: ["pandamime100hp/5"]
 body:
   - type: dropdown
     attributes:

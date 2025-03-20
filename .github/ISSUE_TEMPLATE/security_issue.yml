@@ -4,6 +4,7 @@ description: Report security vulnerabilities
 title: "🔒 [Security]: "
 labels: [security]
 assignees: [pandamime100hp]
+projects: ["pandamime100hp/5"]
 body:
   - type: dropdown
     attributes:

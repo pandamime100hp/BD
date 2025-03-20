@@ -4,6 +4,7 @@ description: Request new functionality
 title: "✨ [Feature]: "
 labels: [feature]
 assignees: [pandamime100hp]
+projects: ["pandamime100hp/5"]
 body:
   - type: textarea
     attributes:

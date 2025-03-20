@@ -4,6 +4,7 @@ description: Infrastructure/Deployment changes
 title: "🚀 [DevOps]: "
 labels: [devops]
 assignees: [pandamime100hp]
+projects: ["pandamime100hp/5"]
 body:
   - type: checkboxes
     attributes:
